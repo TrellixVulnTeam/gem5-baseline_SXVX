@@ -1,0 +1,95 @@
+warn: DRAM device capacity (32768 Mbytes) does not match the address range assigned (512 Mbytes)
+warn: DRAM device capacity (32768 Mbytes) does not match the address range assigned (512 Mbytes)
+warn: DRAM device capacity (32768 Mbytes) does not match the address range assigned (512 Mbytes)
+warn: DRAM device capacity (32768 Mbytes) does not match the address range assigned (512 Mbytes)
+warn: DRAM device capacity (32768 Mbytes) does not match the address range assigned (512 Mbytes)
+warn: DRAM device capacity (32768 Mbytes) does not match the address range assigned (512 Mbytes)
+warn: DRAM device capacity (32768 Mbytes) does not match the address range assigned (512 Mbytes)
+warn: DRAM device capacity (32768 Mbytes) does not match the address range assigned (512 Mbytes)
+warn: DRAM device capacity (32768 Mbytes) does not match the address range assigned (128 Mbytes)
+info: kernel located at: linux-4.19.83-stable/vmlinux-4.19.83
+warn: Sockets disabled, not accepting terminal connections
+warn: Sockets disabled, not accepting gdb connections
+warn: CoherentXBar system.cpu.mmucache.mmubus has no snooping ports attached!
+warn: Reading current count from inactive timer.
+info: KVM: Coalesced MMIO disabled by config.
+warn: x86 cpuid family 0x0000: unimplemented function 2
+warn: x86 cpuid family 0x0000: unimplemented function 3
+warn: x86 cpuid family 0x0000: unimplemented function 4
+warn: x86 cpuid family 0x0000: unimplemented function 5
+warn: x86 cpuid family 0x0000: unimplemented function 6
+info: Entering event queue @ 0.  Starting simulation...
+warn: tr: Illegal segment type (2)
+warn: tr: S flag is set
+warn: kvm-x86: MSR (0x12) unsupported by gem5. Skipping.
+warn: kvm-x86: MSR (0x11) unsupported by gem5. Skipping.
+warn: kvm-x86: MSR (0x4b564d01) unsupported by gem5. Skipping.
+warn: kvm-x86: MSR (0x4b564d00) unsupported by gem5. Skipping.
+warn: kvm-x86: MSR (0x40000000) unsupported by gem5. Skipping.
+warn: kvm-x86: MSR (0x40000001) unsupported by gem5. Skipping.
+warn: kvm-x86: MSR (0x40000020) unsupported by gem5. Skipping.
+warn: kvm-x86: MSR (0x40000021) unsupported by gem5. Skipping.
+warn: kvm-x86: MSR (0x40000022) unsupported by gem5. Skipping.
+warn: kvm-x86: MSR (0x40000023) unsupported by gem5. Skipping.
+warn: kvm-x86: MSR (0x40000100) unsupported by gem5. Skipping.
+warn: kvm-x86: MSR (0x40000101) unsupported by gem5. Skipping.
+warn: kvm-x86: MSR (0x40000102) unsupported by gem5. Skipping.
+warn: kvm-x86: MSR (0x40000103) unsupported by gem5. Skipping.
+warn: kvm-x86: MSR (0x40000104) unsupported by gem5. Skipping.
+warn: kvm-x86: MSR (0x40000105) unsupported by gem5. Skipping.
+warn: kvm-x86: MSR (0x40000003) unsupported by gem5. Skipping.
+warn: kvm-x86: MSR (0x40000002) unsupported by gem5. Skipping.
+warn: kvm-x86: MSR (0x40000010) unsupported by gem5. Skipping.
+warn: kvm-x86: MSR (0x40000080) unsupported by gem5. Skipping.
+warn: kvm-x86: MSR (0x400000b0) unsupported by gem5. Skipping.
+warn: kvm-x86: MSR (0x40000073) unsupported by gem5. Skipping.
+warn: kvm-x86: MSR (0x4b564d02) unsupported by gem5. Skipping.
+warn: kvm-x86: MSR (0x4b564d03) unsupported by gem5. Skipping.
+warn: kvm-x86: MSR (0x4b564d04) unsupported by gem5. Skipping.
+warn: kvm-x86: MSR (0x3b) unsupported by gem5. Skipping.
+warn: kvm-x86: MSR (0x6e0) unsupported by gem5. Skipping.
+warn: kvm-x86: MSR (0x10a) unsupported by gem5. Skipping.
+warn: kvm-x86: MSR (0x1a0) unsupported by gem5. Skipping.
+warn: kvm-x86: MSR (0x4d0) unsupported by gem5. Skipping.
+warn: kvm-x86: MSR (0x9e) unsupported by gem5. Skipping.
+warn: kvm-x86: MSR (0xc001011f) unsupported by gem5. Skipping.
+warn: kvm-x86: MSR (0x8b) unsupported by gem5. Skipping.
+warn: kvm-x86: MSR (0x4b564d05) unsupported by gem5. Skipping.
+warn: Don't know what interrupt to clear for console.
+warn: Tried to clear PCI interrupt 14
+warn: Write to unknown i8042 (keyboard controller) command port.
+warn: ds: S flag not set
+warn: ds: P flag not set
+warn: es: S flag not set
+warn: es: P flag not set
+warn: fs: S flag not set
+warn: fs: P flag not set
+warn: gs: S flag not set
+warn: gs: P flag not set
+warn: ldt: Illegal segment type (0)
+warn: ldt: P flag not set
+warn: ds: S flag not set
+warn: ds: P flag not set
+warn: es: S flag not set
+warn: es: P flag not set
+warn: fs: S flag not set
+warn: fs: P flag not set
+warn: gs: S flag not set
+warn: gs: P flag not set
+warn: ldt: Illegal segment type (0)
+warn: ldt: P flag not set
+warn: ds: S flag not set
+warn: ds: P flag not set
+warn: es: S flag not set
+warn: es: P flag not set
+warn: fs: S flag not set
+warn: fs: P flag not set
+warn: gs: S flag not set
+warn: gs: P flag not set
+warn: ldt: Illegal segment type (0)
+warn: ldt: P flag not set
+warn: ClockedObject: Already in the requested power state, request ignored
+info: Entering event queue @ 22625078901910.  Starting simulation...
+warn: instruction 'verw_Mw_or_Rv' unimplemented
+warn: instruction 'verw_Mw_or_Rv' unimplemented
+warn: instruction 'verw_Mw_or_Rv' unimplemented
