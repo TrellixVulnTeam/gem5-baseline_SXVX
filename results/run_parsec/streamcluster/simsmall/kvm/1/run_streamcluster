@@ -1,5 +1,0 @@
-cd /home/gem5
-source env.sh
-parsecmgmt -a run -p streamcluster -c gcc-hooks -i simsmall
-sleep 5 
-m5 exit 

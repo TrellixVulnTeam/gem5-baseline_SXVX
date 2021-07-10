@@ -1,5 +1,0 @@
-cd /home/gem5
-source env.sh
-parsecmgmt -a run -p fluidanimate -c gcc-hooks -i simlarge
-sleep 5 
-m5 exit 

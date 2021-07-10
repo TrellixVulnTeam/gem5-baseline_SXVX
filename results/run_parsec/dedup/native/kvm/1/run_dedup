@@ -1,5 +1,0 @@
-cd /home/gem5
-source env.sh
-parsecmgmt -a run -p dedup -c gcc-hooks -i native
-sleep 5 
-m5 exit 
