@@ -23,11 +23,17 @@ class MyArtifact:
         for artifact in artifacts:
             if artifact.name == self.name and \
                artifact.type == self.type and \
-               artifact.path == self.path and \
-               artifact.cwd == self.cwd and \
+               artifact.path == Path(self.path) and \
+               artifact.cwd == Path(self.cwd) and \
                artifact.documentation == self.documentation:
                    if artifact.type == 'binary' or artifact.type == 'disk image' or artifact.type == 'gem5 binary' or artifact.type == 'kernel':
-                       if os.path.exists(artifact.path):
+                       if not os.path.exists(artifact.path):
+                           print("Found artifact")
+                           print(artifact)
+                           print("Downloaing to %s ..." % (artifact.path))
+                           subdirs = os.path.dirname(artifact.path)
+                           if not os.path.exists(subdirs):
+                               subdirs = os.makedirs(subdirs)
                            self.db.downloadFile(artifact._id, artifact.path)
                            return artifact
 

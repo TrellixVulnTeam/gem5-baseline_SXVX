@@ -18,10 +18,10 @@ print("Regitering experiments_repo")
 experiments_repo = MyArtifact(
         command = '',#'git clone https://your-remote-add/parsec-tests.git'
         type = 'git repo',
-        name = 'AutoPerf-V2',
+        name = 'gem5-baseline',
         path =  './',
         cwd = '../',
-        documentation = 'main repo to run AutoPerf-V2 with gem5').getArtifact()
+        documentation = 'gem5-baseline repository').getArtifact()
 
 print("Regitering parsec_repo")
 parsec_repo = MyArtifact(
