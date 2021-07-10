@@ -27,8 +27,9 @@ class MyArtifact:
                artifact.cwd == self.cwd and \
                artifact.documentation == self.documentation:
                    if artifact.type == 'binary' or artifact.type == 'disk image' or artifact.type == 'gem5 binary' or artifact.type == 'kernel':
-                       self.db.downloadFile(artifact._id, artifact.path)
-                       return artifact
+                       if os.path.exists(artifact.path):
+                           self.db.downloadFile(artifact._id, artifact.path)
+                           return artifact
 
         return Artifact.registerArtifact(
                 command = self.command,

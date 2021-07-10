@@ -1,2 +1,2 @@
 #!/bin/bash
-export GEM5ART_DB="mongodb://9355c7c2d1db:27017"
+export GEM5ART_DB="mongodb://hpcserver.cse.tamu.edu:27017"
