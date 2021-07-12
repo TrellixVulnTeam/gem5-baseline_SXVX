@@ -4,7 +4,7 @@ from gem5art.run import gem5Run
 from gem5art.tasks.tasks import run_gem5_instance
 from MyArtifact import MyArtifact
 
-print("Regitering packer")
+print("Registering packer")
 packer = MyArtifact(
         command = '''wget https://releases.hashicorp.com/packer/1.4.3/packer_1.4.3_linux_amd64.zip;
         unzip packer_1.4.3_linux_amd64.zip;''',
@@ -14,7 +14,7 @@ packer = MyArtifact(
         cwd = 'disk-image',
         documentation = 'Program to build disk images. Downloaded sometime in August from hashicorp.').getArtifact()
 
-print("Regitering experiments_repo")
+print("Registering experiments_repo")
 experiments_repo = MyArtifact(
         command = '',#'git clone https://your-remote-add/parsec-tests.git'
         type = 'git repo',
@@ -23,7 +23,7 @@ experiments_repo = MyArtifact(
         cwd = '../',
         documentation = 'gem5-baseline repository').getArtifact()
 
-print("Regitering parsec_repo")
+print("Registering parsec_repo")
 parsec_repo = MyArtifact(
         command = '''cd parsec;
         git clone https://github.com/darchr/parsec-benchmark.git;''',
@@ -33,7 +33,7 @@ parsec_repo = MyArtifact(
         cwd = './disk-image/',
         documentation = 'main repo to copy parsec source to the disk-image').getArtifact()
 
-print("Regitering gem5_repo")
+print("Registering gem5_repo")
 gem5_repo = MyArtifact(
         command = '''
         git clone https://gem5.googlesource.com/public/gem5 gem5;
@@ -45,7 +45,7 @@ gem5_repo = MyArtifact(
         cwd = './',
         documentation = 'cloned gem5 source file with version v19.0.0.0').getArtifact()
 
-print("Regitering m5_binary")
+print("Registering m5_binary")
 m5_binary = MyArtifact(
         command = '''cp Makefile.x86 Makefile;
         make;''',
@@ -56,7 +56,7 @@ m5_binary = MyArtifact(
         inputs = [gem5_repo,],
         documentation = 'm5 utility').getArtifact()
 
-print("Regitering disk_image")
+print("Registering disk_image")
 disk_image = MyArtifact(
         command = './packer build parsec/parsec.json',
         type = 'disk image',
@@ -66,7 +66,7 @@ disk_image = MyArtifact(
         inputs = [packer, experiments_repo, m5_binary, parsec_repo,],
         documentation = 'Ubuntu with m5 binary and PARSEC installed.').getArtifact()
 
-print("Regitering disk_binary")
+print("Registering disk_binary")
 gem5_binary = MyArtifact(
         command = 'scons build/X86/gem5.opt -j4',
         type = 'gem5 binary',
@@ -76,7 +76,7 @@ gem5_binary = MyArtifact(
         inputs = [gem5_repo,],
         documentation = 'gem5 binary version v19.0.0.0').getArtifact()
 
-print("Regitering linux_repo")
+print("Registering linux_repo")
 linux_repo = MyArtifact(
         command = '''git clone --branch v4.19.83 --depth 1 https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git;
         mv linux linux-4.19.83-stable''',
@@ -86,7 +86,7 @@ linux_repo = MyArtifact(
         cwd = './',
         documentation = 'linux kernel source code repo version 4.19.83').getArtifact()
 
-print("Regitering linux_binary")
+print("Registering linux_binary")
 linux_binary = MyArtifact(
         name = 'vmlinux-4.19.83',
         type = 'kernel',
