@@ -66,7 +66,7 @@ disk_image = MyArtifact(
         inputs = [packer, experiments_repo, m5_binary, parsec_repo,],
         documentation = 'Ubuntu with m5 binary and PARSEC installed.').getArtifact()
 
-print("Registering disk_binary")
+print("Registering gem5_binary")
 gem5_binary = MyArtifact(
         command = 'scons build/X86/gem5.opt -j4',
         type = 'gem5 binary',
