@@ -75,7 +75,7 @@ gem5_binary = MyArtifact(
         path =  'gem5/build/X86/gem5.opt',
         inputs = [gem5_repo,],
         documentation = 'gem5 binary version v19.0.0.0').getArtifact()
-
+os.system('chown 777 -R gem5/build')
 print("Registering linux_repo")
 linux_repo = MyArtifact(
         command = '''git clone --branch v4.19.83 --depth 1 https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git;
