@@ -142,7 +142,6 @@ if __name__ == "__main__":
                 if cpu == 'timing' and size != 'simsmall':
                     continue
                 for bm in benchmarks:
-                    print('creating FS run')
                     run = gem5Run.createFSRun(
                             'parsec_tests',    
                             'gem5/build/X86/gem5.opt',
@@ -155,4 +154,5 @@ if __name__ == "__main__":
                             cpu, bm, size, num_cpu,
                             timeout = 24*60*60 #24 hours
                             )
+                    print('creating FS run :%s' % (run))
                     run_gem5_instance.apply_async((run, os.getcwd(), ))
