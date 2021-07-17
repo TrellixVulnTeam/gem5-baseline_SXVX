@@ -41,6 +41,7 @@ RUN pip install gem5art-artifact gem5art-run gem5art-tasks
 RUN pip install dnspython
 RUN pip install celery
 RUN pip install flower
+RUN pip install fixedint
 
 ######################################
 # gem5 ver 19 requires to use python 2
